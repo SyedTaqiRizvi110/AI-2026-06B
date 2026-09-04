@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Betania+Patmos&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+.betania-patmos-regular
+{
+  font-family: "Betania Patmos", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.dancing-script {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+body
+{
+    margin: 0 auto;
+}
+    
+
+.container
+{
+    width: 90%;
+    height: 400px;
+    margin-left: 5%;
+}
+
+.bar
+{
+    width: 49%;
+    height: 300px;
+    padding: 0.25%;
+    float: left;
+}
+
+.form-control
+{
+    width:200px;
+}
+
+/* .form-control:hover
+{
+    border: 2px solid rgb(109, 109, 109);
+    transition: 1s;
+    box-shadow: 0px 0px 3px rgb(109, 109, 109);
+} */
+
+.form-control:focus
+{
+    border: 2px solid rgb(133, 207, 212) !important;
+    transition: 1s;
+    box-shadow: 0px 0px 3px rgb(106, 200, 206) !important;
+}
+
+</style>
+<body>
+<div class="container">
+    <h1 class="betania-patmos-regular" style="text-align: center;">Contact Us</h1>
+    <div class="leftbar bar">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.7875704290973!2d67.07726307488124!3d24.90522664346568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f5ba1db4061%3A0xad2c7a2c189158d0!2sAptech%20Gulshan%202!5e0!3m2!1sen!2s!4v1788498096615!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+    <div class="rightbar bar">
+        <h2 style="text-align: center;" class="archivo-black-regular">Contact Form</h2>
+        <form action="">
+            <table align="center" cellspacing="10px">
+                <tr>
+                    <td><label class="dancing-script">Full Name</label></td>
+                    <td><input type="text" name="name" class="form-control" placeholder="Enter Your Full Name Here" required></td>
+                </tr>
+                <tr>
+                    <td><label class="dancing-script">Email Address</label></td>
+                    <td><input type="email" name="email" class="form-control" placeholder="Enter Your Email Here" required></td>
+                </tr>
+                <tr>
+                    <td><label class="dancing-script">Date Of Birth</label></td>
+                    <td><input type="date" name="dob" class="form-control" required></td>
+                </tr>
+                <tr>
+                    <td><label class="dancing-script">Gender</label></td>
+                    <td>
+                        <select name="Gender" class="form-control" id="" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" class="form-control" name="SubmitData"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+</body>
+</html>
