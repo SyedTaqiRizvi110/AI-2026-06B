@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+.container
+{
+    width: 80%;
+    margin-left: 10%;
+}
+
+h1
+{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+img
+{
+    height: 290px;
+    transition: 0.5s;
+    /* filter: grayscale(100); */
+}
+
+a img:hover
+{
+    transform: scale(1.05);
+    transition: 0.5s;
+    /* filter: grayscale(0); */
+    box-shadow: 1px 1px 3px 0px #000000;
+}
+
+</style>
+<body>
+<div class="container">
+    <h1>Our Products</h1>
+    <a href="images/Product1.webp" data-lightbox="Gallery1" data-title="Product 1"><img src="images/Product1.webp" alt=""></a>
+    <a href="images/Product2.webp" data-lightbox="Gallery2" data-title="Product 2"><img src="images/Product2.webp" alt=""></a>
+    <a href="images/Product3.webp" data-lightbox="Gallery3" data-title="Product 3"><img src="images/Product3.webp" alt=""></a>
+    <a href="images/Product4.webp" data-lightbox="Gallery4" data-title="Product 4"><img src="images/Product4.webp" alt=""></a>  
+</div>
+
+</body>
+</html>
