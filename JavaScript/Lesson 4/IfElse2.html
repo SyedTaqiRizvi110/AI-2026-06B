@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+//LOGICAL OPERATORS
+/*
+    1. AND (&&)
+    2. OR (||)
+*/
+
+let Age = parseInt(prompt("Enter Your Age Here..."));
+
+if(Age >= 18 && Age < 65)
+{
+    document.write("You can apply for a standard bank account...");
+}
+else if(Age >= 10 && Age < 18)
+{
+    document.write("You can apply for a children bank account...");
+}
+else if(Age >= 65 && Age < 100)
+{
+    document.write("You can apply for a senior citizen bank account...");
+}
+else
+{
+    document.write("You cannot apply for a bank account...");
+}
+
+</script>
+</body>
+</html>
